@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="logoContainer">
+        <img class="logoImage" src="images/logo.svg" alt="logo" />
+      </div>
+      <picture>
+        <source media="(min-width: 1000px)" srcset="images/hero-desktop.jpg" />
+        <source media="(min-width: 0px)" srcset="images/hero-mobile.jpg" />
+        <img src="images/hero-desktop" alt="" />
+      </picture>
+      <div class="header">
+        <h1 class="header1">WE'RE</h1>
+        <h1 class="header2">COMING SOON</h1>
+      </div>
+      <div class="paragraph">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </div>
+      <div class="emailContainer" id="emailContainer">
+        <form action="">
+          <div id="inputContainer">
+            <input
+              type="email"
+              class="email"
+              id="emailInput"
+              placeholder="       Email Address"
+            />
+			<input
+          type="submit"
+          class="btn btn-primary"
+          value=">"
+          onclick="activeState()"
+        />
+            <span id="icon"></span>
+          </div>
+        </form>
+        
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
